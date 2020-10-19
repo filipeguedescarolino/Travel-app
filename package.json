@@ -1,0 +1,38 @@
+{
+    "name": "y",
+    "version": "1.0.0",
+    "description": "This is the weather journal app package",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/server/index.js",
+        "build-prod": "webpack --config webpack.prod.js",
+        "build-dev": "webpack --config webpack.dev.js "
+    },
+    "author": "Filipe Carolino",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "bulma": "^0.9.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "webpack": "^5.1.3",
+        "webpack-cli": "^4.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "html-webpack-plugin": "^4.5.0",
+        "webpack-dev-server": "^3.11.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/filipeguedescarolino/Travel-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/filipeguedescarolino/Travel-app/issues"
+    },
+    "homepage": "https://github.com/filipeguedescarolino/Travel-app#readme"
+}

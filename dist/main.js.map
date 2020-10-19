@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://y/./src/client/index.js"],"names":[],"mappings":";;;;;;AAAA,WAAW,gBAAgB;;;AAG3B,oB","file":"main.js","sourcesContent":["// import { performAction } from './js/app.js'\r\n\r\n\r\nalert(\"i am here!\");"],"sourceRoot":""}
