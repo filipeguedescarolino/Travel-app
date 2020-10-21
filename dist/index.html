@@ -23,12 +23,12 @@
         </div>
         <div class="field">
             <p class="control has-icons-left ">
-                <input class="input is-rounded input is-medium is-centered" type="text" placeholder="Choose a destination">
+                <input class="input is-rounded input is-medium is-centered" id="city" type="text" placeholder="Choose a destination">
                 <span class="icon is-small is-left">
                           
             <i class="fas fa-plane-departure"></i>
                    
-                    imagem check
+                    
                      </span>
                 <span class="icon is-small is-right">
                     <i class="fas fa-check"></i>
@@ -42,7 +42,7 @@
         </div>
         <div class="field">
             <p class="control has-icons-left">
-                <input class="input is-rounded" type="date" placeholder="date">
+                <input class="input is-rounded" type="date" id="date" placeholder="date">
                 <span class="icon is-small is-left">
                  <i class="fas fa-lock"></i>
                  </span>
@@ -55,13 +55,35 @@
         </div>
 
         <div class="buttons">
-            <button class="button is-primary is-light">Search</button>
+            <button class="button is-primary is-light" id="get" onclick="return Client.getTodos(event)">Search</button>
         </div>
+    </section>
+    <section class="responses">
+
+
+        <div id="res">
+            <h1> Trip to {res.city}, {res.country}</h1>
+            <h3> Departing: {res.date}</h3>
+            <h3> Trip to {res.city}, {res.country} will happen in {res.days} days.</h3>
+            <h3> Weather: {res.weather}</h3>
+
+
+        </div>
+
     </section>
 
 
-
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script> -->
 <script src="main.js"></script></body>
 
 

@@ -1,3 +1,8 @@
+const { default: Axios } = require("axios");
+const maxRows = 1
+const username = "filipeslb10"
+const dummy = {};
+
 // Empty JS object to act as endpoint for all routes including as the API endpoint
 let projectData = {};
 
@@ -34,7 +39,19 @@ app.get('/', (req, res) => {
     res.sendFile('dist/index.html')
 })
 
+app.get('/city', (req, res) => {
+    let city = req.query.q
+    dummy = {
+        city: "Lisbon",
+        cityId: 2267057,
+        country: "Portugal",
+        days: -113,
+        departDate: 1593475200000,
+        imageUrl: "https://pixabay.com/get/53e6d7424c56ab14f1dc8460962931761c3ddee35b4c704f752c79d39748c25e_640.jpg",
+        weather: "No forecast for this city"
+    };
+    res.send(dummy)
 
-
+})
 
 // POST Route:
