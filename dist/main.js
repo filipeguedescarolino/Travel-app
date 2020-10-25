@@ -2434,8 +2434,7 @@ module.exports = function (list, options) {
   !*** ./src/client/index.js ***!
   \*****************************/
 /*! namespace exports */
-/*! export getTodos [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/app.js .getTodos */
-/*! export showOutput [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/app.js .showOutput */
+/*! export getInfo [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/app.js .getInfo */
 /*! other exports [not provided] [maybe used in main (runtime-defined)] */
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2443,14 +2442,16 @@ module.exports = function (list, options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getTodos": () => /* reexport safe */ _js_app_js__WEBPACK_IMPORTED_MODULE_0__.getTodos,
-/* harmony export */   "showOutput": () => /* reexport safe */ _js_app_js__WEBPACK_IMPORTED_MODULE_0__.showOutput
+/* harmony export */   "getInfo": () => /* reexport safe */ _js_app_js__WEBPACK_IMPORTED_MODULE_0__.getInfo
 /* harmony export */ });
 /* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/app.js */ "./src/client/js/app.js");
 /* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/header.scss */ "./src/client/styles/header.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/style.scss */ "./src/client/styles/style.scss");
  
- 
+
+
+
+
  
  
 
@@ -2466,8 +2467,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./src/client/js/app.js ***!
   \******************************/
 /*! namespace exports */
-/*! export getTodos [provided] [no usage info] [missing usage info prevents renaming] */
-/*! export showOutput [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export getInfo [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2475,94 +2475,71 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getTodos": () => /* binding */ getTodos,
-/* harmony export */   "showOutput": () => /* binding */ showOutput
+/* harmony export */   "getInfo": () => /* binding */ getInfo
 /* harmony export */ });
  
- 
+
+
+
+
 
  const { default: Axios } = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 
- // function handleSubmit(event) {
- //     event.preventDefault()
- //     let destinationValue = document.getElementById("city").value;
- //     let dateValue = document.getElementById("date").value;
- //         console.log("Form Submitted")
+ async function getInfo() {
+
+     let city = document.getElementById('city').value;
+     let date = document.getElementById('date').value;
+     let timeNow = new Date();
+
+     let response = await Axios({
+         method: 'get',
+         url: '/travel-info',
+         params: {
+             city: city,
+             date: date
+         }
+     })
+
+     document.getElementById("result-modal").classList.add("is-active");
+
+     console.log(response)
 
 
- //Get Request
- function getTodos() {
-     debugger
-     let destinationValue = document.getElementById("city").value;
-     let username = "filipeslb10"
-     let dateValue = document.getElementById("date").value;
+     let today = new Date();
+     let day = String(today.getDate()).padStart(2, '0');
+     let month = String(today.getMonth() + 1).padStart(2, '0'); // Because January is 0!
+     let year = today.getFullYear();
 
-     Axios({
-             method: 'get',
-             url: `http://localhost:4500/city?q=${destinationValue}`
-         })
-         .then(res => showOutput(res))
-         .catch(err => console.log(err))
+     // Set two dates to two variables    
+     let dateNow = new Date(year + '/' + month + '/' + day);
+     let travelDate = new Date(date);
+
+     // To calculate the time difference of two dates 
+     let DifferenceInTime = travelDate.getTime() - dateNow.getTime();
+
+     // To calculate the number of days between two dates 
+     let DifferenceInDays = DifferenceInTime / (1000 * 3600 * 24);
+     DifferenceInDays = DifferenceInDays.toFixed(0);
 
 
-     //  Axios({
-     //          method: 'get',
-     //          url: `http://api.geonames.org/searchJSON?q=${destinationValue}&maxRows=1&username=filipeslb10`
-     //      })
-     //      .then(res => console.log(res.data.geonames))
-     //      .catch(err => console.log(err))
+
+
+
+
+
+
+     console.log(DifferenceInDays)
+
+     document.getElementById("res-img").src = response.data.images;
+     document.getElementById("res-city").innerHTML = `You will go to: ${response.data.city}`;
+     document.getElementById("res-date").innerHTML = `Departure: ${response.data.date}`;
+     document.getElementById("res-time").innerHTML = `You will travel in: ${DifferenceInDays}  days`;
+     document.getElementById("res-temp-weather").innerHTML = `Weather: ${response.data.weather} temp: ${response.data.temp}`
+
+
+
  }
-
- // Show output in browser
- function showOutput(res) {
-     document.getElementById("res").innerHTML = `
-        <div class="card card-body mb-4">
-            <h5>Status: §{res.status} </h5>
-        </div>
-
-        <div class="card card-mt-3">
-            <div class="card-header">
-            Headers
-            </div>
-            <div class="card-body">
-            <pre> ${JSON.stringify(res.headers.data, null, 2)}</pre>
-            </div>
-        </div>
-
-        <div class="card mt-3>
-            <div class="card-header">
-            DATA
-            </div>
-        </div>
-
-        
-        `
- }
-
-
-
- // }
- // fetch api req ex
- // function handlesubmit(event) {
- //     event.preventDefault()
- //     let formText = document.getElementById('name').value 
- //     Client.checkForName(formText)
- // console.log(" Form Submitted")
-
- // fetch("http://localhost:8081/test")
- //     .then(res => {
- //         return res.json()
- //     })
- //     .then (function(data) {
- //         document.getElementById('results').innerHTML = data.qquer coisa
- //     })
- // }
-
- // exporting
- // export { handlesubmit }
-
- // Function to GET Web API
 
 /***/ })
 

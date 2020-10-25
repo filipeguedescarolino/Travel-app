@@ -1,5 +1,8 @@
- import { getTodos } from './js/app.js'
- import { showOutput } from './js/app.js'
+ import { getInfo } from './js/app.js'
+
+
+
+
  import './styles/header.scss'
  import './styles/style.scss'
 
@@ -7,6 +10,6 @@
  console.log("a bola");
 
  export {
-     getTodos,
-     showOutput
+     getInfo,
+
  }

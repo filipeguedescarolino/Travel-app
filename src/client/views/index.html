@@ -16,6 +16,9 @@
 <body>
 
     <section class="container-1 ">
+        <div id="error">
+            <h2></h2>
+        </div>
         <div class="field-area">
             <div class="control">
                 <textarea class="textarea is-warning is-small " placeholder="errors"></textarea>
@@ -34,56 +37,75 @@
                     <i class="fas fa-check"></i>
                   </span> -->
             </p>
-            <span>
-            <p class="error-destination">
-                          You need to write a city/country.
-            </p>
-              </span>
+
         </div>
         <div class="field">
             <p class="control has-icons-left">
-                <input class="input is-rounded" type="date" id="date" placeholder="date">
+                <input class="input is-rounded" type="date" id="date" placeholder="date" required>
                 <span class="icon is-small is-left">
                  <i class="fas fa-lock"></i>
                  </span>
             </p>
-            <span>
-               <p class="error-date">
-                           You to set a valid date.
-                </p>
-                </span>
+
         </div>
 
         <div class="buttons">
-            <button class="button is-primary is-light" id="get" onclick="return Client.getTodos(event)">Search</button>
+            <button class="button is-primary is-light" id="get" onsubmit="return false" onclick="return Client.getInfo(event)" required>Search</button>
         </div>
     </section>
-    <section class="responses">
+    <div id="result-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button id="btn" class="delete" aria-label="close">Where am i</button>
+            </header>
+            <section class="modal-card-body">
+                <div id="res">
+                    <div id="res-image">
+                        <img id="res-img" alt="picture of your town">
+                    </div>
+
+                    <div id="res-city">
+                        You will go to:
+                    </div>
+                    <div id="res-date">
+                        Departure date:
+                    </div>
+                    <div id="res-time">
+                        Your journey will happen in:
+                    </div>
+                    <div id="res-temp-weather">
+                        Weather: Temperature:
+                    </div>
+                </div>
 
 
-        <div id="res">
-            <h1> Trip to {res.city}, {res.country}</h1>
-            <h3> Departing: {res.date}</h3>
-            <h3> Trip to {res.city}, {res.country} will happen in {res.days} days.</h3>
-            <h3> Weather: {res.weather}</h3>
 
 
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success is-large" onclick="document.getElementById('result-modal').classList.remove('is-active')">
+                Save changes</button>
+                <button class="button is-danger is-large">Cancel</button>
+            </footer>
         </div>
+    </div>
 
-    </section>
 
 
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../js/validation.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- <script>
-        // Check that service workers are supported
-        if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performant
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-        }
-    </script> -->
+
 </body>
 
 
