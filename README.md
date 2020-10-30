@@ -32,5 +32,5 @@ This app is currently running on port 4500, so after starting the server and cho
 
 ## Author
 
-[Filipe Guedes Carolino](https://github.com/FilipeGuedesCarolino) :octocat:
+[Filipe Guedes Carolino](https://github.com/FilipeGuedesCarolino) 
 
