@@ -1893,37 +1893,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/header.scss":
-/*!********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/header.scss ***!
-  \********************************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, module.id, __webpack_require__.d, __webpack_require__.*, module */
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/style.scss":
 /*!*******************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/style.scss ***!
@@ -1948,7 +1917,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n  min-height: 100%;\n  background-image: url(https://images.theconversation.com/files/344948/original/file-20200701-54162-1vqr1yb.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-attachment: fixed; }\n\n.title,\n.subtitle {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 40%;\n  text-align: center; }\n\n.container-1,\n.container-2 {\n  width: 40%;\n  margin-left: 520px;\n  margin-top: 100px; }\n\n.error-date,\n.error-destination {\n  display: none; }\n\n.field-area {\n  display: none; }\n", "",{"version":3,"sources":["webpack://src/client/styles/style.scss"],"names":[],"mappings":"AAAC;EACI,gBAAgB;EAChB,wKAAwK;EACxK,sBAAsB;EACtB,4BAA4B;EAC5B,kCAAkC;EAClC,4BAA4B,EAAA;;AAGhC;;EAEI,cAAc;EACd,iBAAiB;EACjB,kBAAkB;EAClB,UAAU;EACV,kBAAkB,EAAA;;AAGtB;;EAEI,UAAU;EACV,kBAAkB;EAClB,iBAAiB,EAAA;;AAGrB;;EAEI,aAAa,EAAA;;AAGjB;EACI,aAAa,EAAA","sourcesContent":[" html {\r\n     min-height: 100%;\r\n     background-image: url(https://images.theconversation.com/files/344948/original/file-20200701-54162-1vqr1yb.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);\r\n     background-size: cover;\r\n     background-repeat: no-repeat;\r\n     background-position: center center;\r\n     background-attachment: fixed;\r\n }\r\n \r\n .title,\r\n .subtitle {\r\n     display: block;\r\n     margin-left: auto;\r\n     margin-right: auto;\r\n     width: 40%;\r\n     text-align: center;\r\n }\r\n \r\n .container-1,\r\n .container-2 {\r\n     width: 40%;\r\n     margin-left: 520px;\r\n     margin-top: 100px;\r\n }\r\n \r\n .error-date,\r\n .error-destination {\r\n     display: none;\r\n }\r\n \r\n .field-area {\r\n     display: none;\r\n }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html {\n  min-height: 100%;\n  background-image: url(https://images.theconversation.com/files/344948/original/file-20200701-54162-1vqr1yb.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-attachment: fixed; }\n\n.title,\n.subtitle {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 40%;\n  text-align: center; }\n\n.container-1,\n.container-2 {\n  width: 40%;\n  margin-left: 520px;\n  margin-top: 100px; }\n\n.error-date,\n.error-destination {\n  display: none; }\n\n.field-area {\n  display: none; }\n\n#card-container {\n  display: flex;\n  margin-top: 100px;\n  background-color: lightblue; }\n\n#master-card {\n  display: flex;\n  margin-right: 20px;\n  margin-left: 20px;\n  justify-content: space-evenly;\n  flex-basis: 250%; }\n\n#get {\n  width: 45%;\n  margin-left: 10px; }\n\n#get-history {\n  width: 45%; }\n\n#master-card {\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: row;\n  background-color: lightgray; }\n\n#history-title {\n  width: 100%;\n  font-size: 20px;\n  font-weight: bold;\n  margin-top: 30px;\n  margin-left: 500px; }\n\n#error {\n  font-weight: bold;\n  text-transform: uppercase;\n  color: red; }\n\n#cards-container {\n  display: flex;\n  margin-top: 30px;\n  text-align: center; }\n\n.history-card {\n  padding: 15px;\n  background-color: #d8d9de;\n  margin-right: 15px;\n  width: 230px;\n  font-size: 19px;\n  font-weight: 600;\n  text-transform: capitalize;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s; }\n\n#footer {\n  display: flex;\n  flex-direction: column;\n  padding: 40px;\n  line-height: 1;\n  align-items: center;\n  margin-left: 150px; }\n\n#footer a {\n  color: rebeccapurple; }\n", "",{"version":3,"sources":["webpack://src/client/styles/style.scss"],"names":[],"mappings":"AAAC;EACI,gBAAgB;EAChB,wKAAwK;EACxK,sBAAsB;EACtB,4BAA4B;EAC5B,kCAAkC;EAClC,4BAA4B,EAAA;;AAGhC;;EAEI,cAAc;EACd,iBAAiB;EACjB,kBAAkB;EAClB,UAAU;EACV,kBAAkB,EAAA;;AAGtB;;EAEI,UAAU;EACV,kBAAkB;EAClB,iBAAiB,EAAA;;AAGrB;;EAEI,aAAa,EAAA;;AAGjB;EACI,aAAa,EAAA;;AAGjB;EACI,aAAa;EACb,iBAAiB;EACjB,2BAA2B,EAAA;;AAG/B;EACI,aAAa;EACb,kBAAkB;EAClB,iBAAiB;EACjB,6BAA6B;EAC7B,gBAAgB,EAAA;;AAGpB;EACI,UAAU;EACV,iBAAiB,EAAA;;AAGrB;EACI,UAAU,EAAA;;AAGd;EACI,aAAa;EACb,eAAe;EACf,mBAAmB;EACnB,2BAA2B,EAAA;;AAG/B;EACI,WAAW;EACX,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,iBAAiB;EACjB,yBAAyB;EACzB,UAAU,EAAA;;AAGd;EACI,aAAa;EACb,gBAAgB;EAChB,kBAAkB,EAAA;;AAGtB;EACI,aAAa;EACb,yBAAyB;EACzB,kBAAkB;EAClB,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,0BAA0B;EAC1B,0CAA0C;EAC1C,gBAAgB,EAAA;;AAGpB;EACI,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,cAAc;EACd,mBAAmB;EACnB,kBAAkB,EAAA;;AAGtB;EACI,oBAAoB,EAAA","sourcesContent":[" html {\r\n     min-height: 100%;\r\n     background-image: url(https://images.theconversation.com/files/344948/original/file-20200701-54162-1vqr1yb.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);\r\n     background-size: cover;\r\n     background-repeat: no-repeat;\r\n     background-position: center center;\r\n     background-attachment: fixed;\r\n }\r\n \r\n .title,\r\n .subtitle {\r\n     display: block;\r\n     margin-left: auto;\r\n     margin-right: auto;\r\n     width: 40%;\r\n     text-align: center;\r\n }\r\n \r\n .container-1,\r\n .container-2 {\r\n     width: 40%;\r\n     margin-left: 520px;\r\n     margin-top: 100px;\r\n }\r\n \r\n .error-date,\r\n .error-destination {\r\n     display: none;\r\n }\r\n \r\n .field-area {\r\n     display: none;\r\n }\r\n \r\n #card-container {\r\n     display: flex;\r\n     margin-top: 100px;\r\n     background-color: lightblue;\r\n }\r\n \r\n #master-card {\r\n     display: flex;\r\n     margin-right: 20px;\r\n     margin-left: 20px;\r\n     justify-content: space-evenly;\r\n     flex-basis: 250%;\r\n }\r\n \r\n #get {\r\n     width: 45%;\r\n     margin-left: 10px;\r\n }\r\n \r\n #get-history {\r\n     width: 45%;\r\n }\r\n \r\n #master-card {\r\n     display: flex;\r\n     flex-wrap: wrap;\r\n     flex-direction: row;\r\n     background-color: lightgray;\r\n }\r\n \r\n #history-title {\r\n     width: 100%;\r\n     font-size: 20px;\r\n     font-weight: bold;\r\n     margin-top: 30px;\r\n     margin-left: 500px;\r\n }\r\n \r\n #error {\r\n     font-weight: bold;\r\n     text-transform: uppercase;\r\n     color: red;\r\n }\r\n \r\n #cards-container {\r\n     display: flex;\r\n     margin-top: 30px;\r\n     text-align: center;\r\n }\r\n \r\n .history-card {\r\n     padding: 15px;\r\n     background-color: #d8d9de;\r\n     margin-right: 15px;\r\n     width: 230px;\r\n     font-size: 19px;\r\n     font-weight: 600;\r\n     text-transform: capitalize;\r\n     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\r\n     transition: 0.3s;\r\n }\r\n \r\n #footer {\r\n     display: flex;\r\n     flex-direction: column;\r\n     padding: 40px;\r\n     line-height: 1;\r\n     align-items: center;\r\n     margin-left: 150px;\r\n }\r\n \r\n #footer a {\r\n     color: rebeccapurple;\r\n }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2076,40 +2045,6 @@ module.exports = function cssWithMappingToString(item) {
 
   return [content].join('\n');
 };
-
-/***/ }),
-
-/***/ "./src/client/styles/header.scss":
-/*!***************************************!*\
-  !*** ./src/client/styles/header.scss ***!
-  \***************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./header.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/header.scss");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_header_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_header_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -2435,6 +2370,9 @@ module.exports = function (list, options) {
   \*****************************/
 /*! namespace exports */
 /*! export getInfo [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/app.js .getInfo */
+/*! export hideDiv [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/hideHistory.js .hideDiv */
+/*! export travelHistory [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/travelHistory.js .travelHistory */
+/*! export validation [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] -> ./src/client/js/validation.js .validation */
 /*! other exports [not provided] [maybe used in main (runtime-defined)] */
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2442,21 +2380,25 @@ module.exports = function (list, options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getInfo": () => /* reexport safe */ _js_app_js__WEBPACK_IMPORTED_MODULE_0__.getInfo
+/* harmony export */   "getInfo": () => /* reexport safe */ _js_app_js__WEBPACK_IMPORTED_MODULE_0__.getInfo,
+/* harmony export */   "travelHistory": () => /* reexport safe */ _js_travelHistory_js__WEBPACK_IMPORTED_MODULE_1__.travelHistory,
+/* harmony export */   "validation": () => /* reexport safe */ _js_validation_js__WEBPACK_IMPORTED_MODULE_2__.validation,
+/* harmony export */   "hideDiv": () => /* reexport safe */ _js_hideHistory_js__WEBPACK_IMPORTED_MODULE_4__.hideDiv
 /* harmony export */ });
 /* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/app.js */ "./src/client/js/app.js");
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/header.scss */ "./src/client/styles/header.scss");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/style.scss */ "./src/client/styles/style.scss");
+/* harmony import */ var _js_travelHistory_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/travelHistory.js */ "./src/client/js/travelHistory.js");
+/* harmony import */ var _js_validation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/validation.js */ "./src/client/js/validation.js");
+/* harmony import */ var _js_hideHistory_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/hideHistory.js */ "./src/client/js/hideHistory.js");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/style.scss */ "./src/client/styles/style.scss");
+ 
+ 
+ 
  
 
 
 
 
  
- 
-
- alert("i am here!");
- console.log("a bola");
 
  
 
@@ -2486,6 +2428,9 @@ __webpack_require__.r(__webpack_exports__);
  const { default: Axios } = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 
+
+
+
  async function getInfo() {
 
      let city = document.getElementById('city').value;
@@ -2503,7 +2448,7 @@ __webpack_require__.r(__webpack_exports__);
 
      document.getElementById("result-modal").classList.add("is-active");
 
-     console.log(response)
+
 
 
      let today = new Date();
@@ -2528,8 +2473,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+     console.log(response)
 
-     console.log(DifferenceInDays)
 
      document.getElementById("res-img").src = response.data.images;
      document.getElementById("res-city").innerHTML = `You will go to: ${response.data.city}`;
@@ -2540,6 +2485,167 @@ __webpack_require__.r(__webpack_exports__);
 
 
  }
+
+/***/ }),
+
+/***/ "./src/client/js/hideHistory.js":
+/*!**************************************!*\
+  !*** ./src/client/js/hideHistory.js ***!
+  \**************************************/
+/*! namespace exports */
+/*! export hideDiv [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "hideDiv": () => /* binding */ hideDiv
+/* harmony export */ });
+
+
+
+
+function hideDiv() {
+    let divHistory = document.getElementById("cards-container")
+
+    if (divHistory.style.display === "none") {
+        divHistory.style.display = "block";
+    } else {
+        divHistory.style.display = "none";
+    }
+}
+
+/***/ }),
+
+/***/ "./src/client/js/travelHistory.js":
+/*!****************************************!*\
+  !*** ./src/client/js/travelHistory.js ***!
+  \****************************************/
+/*! namespace exports */
+/*! export travelHistory [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "travelHistory": () => /* binding */ travelHistory
+/* harmony export */ });
+
+const { default: Axios } = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+async function travelHistory() {
+    let response = await Axios({
+        method: 'get',
+        url: '/travel-history'
+    })
+
+    let cards = "";
+    let travelHistories = response.data;
+
+    travelHistories.forEach(historyCard => {
+        cards += `
+           
+        <div class="history-card">
+            <div>  
+                <img src=${historyCard.smallURL}>
+            </div>
+
+            <h2>  
+               City: ${historyCard.city}
+            </h2>
+
+            <h2>  
+                Flight date: ${historyCard.date}
+             </h2>
+               
+            <h2> 
+                Booked in: ${historyCard.dateToday}     
+            </h2>
+            <h2> 
+                    Weather:  ${historyCard.weather} 
+            </h2>
+            
+            <h2>
+                Temperature: ${historyCard.temp}   
+            </h2>
+         </div>`;
+
+    });
+
+
+    document.getElementById('cards-container').innerHTML = cards;
+
+
+
+
+
+
+
+
+
+}
+
+/***/ }),
+
+/***/ "./src/client/js/validation.js":
+/*!*************************************!*\
+  !*** ./src/client/js/validation.js ***!
+  \*************************************/
+/*! namespace exports */
+/*! export validation [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "validation": () => /* binding */ validation
+/* harmony export */ });
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app */ "./src/client/js/app.js");
+
+
+
+
+
+document.getElementById("get").addEventListener("click", validation)
+
+
+
+function validation(e) {
+
+    let city = document.getElementById("city").value;
+    let button = document.getElementById("get");
+    let date = document.getElementById("date");
+    const errElement = document.getElementById("error");
+
+    let messages = []
+
+    if (city.value === null) {
+        messages.push("Name is required");
+
+    }
+
+    if (date.value === "" || date.value == null) {
+        messages.push("date is required");
+
+    }
+    if (messages.length > 0) {
+        e.preventDefault()
+        errElement.innerHTML = messages.join('</br>')
+    } else {
+        (0,_app__WEBPACK_IMPORTED_MODULE_0__.getInfo)()
+    }
+
+
+
+
+
+}
 
 /***/ })
 

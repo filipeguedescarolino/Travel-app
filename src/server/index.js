@@ -13,6 +13,7 @@ const dateNow = new Date()
 
 // Empty JS object to act as endpoint for all routes including as the API endpoint
 let travelInfo = {};
+let travelHistory = [];
 
 // Express package to run the server and its routes
 const express = require("express");
@@ -68,7 +69,8 @@ app.get("/travel-info", async(request, response) => {
             latitude = finalResult.data.geonames[0].lat;
             longitude = finalResult.data.geonames[0].lng;
             travelInfo.city = request.query["city"];
-            travelInfo.date = request.query["date"]
+            travelInfo.date = request.query["date"];
+
 
         })
         .catch(err => console.log(err));
@@ -87,6 +89,8 @@ app.get("/travel-info", async(request, response) => {
             travelInfo.weather = final.data.data[0].weather.description;
             travelInfo.temp = final.data.data[0].temp;
 
+
+
         })
         .catch(err => console.log(err));
 
@@ -100,6 +104,7 @@ app.get("/travel-info", async(request, response) => {
         })
         .then((pixResult) => {
             travelInfo.images = pixResult.data.hits[0].largeImageURL;
+            travelInfo.smallURL = pixResult.data.hits[0].previewURL;
         })
         .catch(err => console.log(err));
 
@@ -119,7 +124,23 @@ app.get("/travel-info", async(request, response) => {
 
     travelInfo.dateToday = formatDate(dateNow)
 
+    //save requested data to 
 
+
+
+
+    travelHistory.push(travelInfo);
 
     response.json(travelInfo);
+
 });
+
+
+
+app.get("/travel-history", async(request, response) => {
+    response.json(travelHistory);
+
+})
+
+// to do the tests
+module.exports = server

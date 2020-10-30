@@ -17,49 +17,53 @@
 
     <section class="container-1 ">
         <div id="error">
-            <h2></h2>
+
         </div>
+
         <div class="field-area">
             <div class="control">
                 <textarea class="textarea is-warning is-small " placeholder="errors"></textarea>
             </div>
         </div>
+
         <div class="field">
             <p class="control has-icons-left ">
                 <input class="input is-rounded input is-medium is-centered" id="city" type="text" placeholder="Choose a destination">
                 <span class="icon is-small is-left">
-                          
-            <i class="fas fa-plane-departure"></i>
-                   
-                    
-                     </span>
+                    <i class="fas fa-plane-departure"></i>
+                </span>
                 <span class="icon is-small is-right">
                     <i class="fas fa-check"></i>
-                  </span> -->
+                </span>
             </p>
-
         </div>
+
         <div class="field">
             <p class="control has-icons-left">
                 <input class="input is-rounded" type="date" id="date" placeholder="date" required>
                 <span class="icon is-small is-left">
-                 <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock"></i>
                  </span>
             </p>
-
         </div>
 
-        <div class="buttons">
-            <button class="button is-primary is-light" id="get" onsubmit="return false" onclick="return Client.getInfo(event)" required>Search</button>
+        <div class="buttons" id="button-listening">
+            <button class="button is-primary is-light" id="get" onclick="return Client.validation(event) ">Search</button>
+            <button class="button is-success is-dark" id="get-history" onclick="return Client.hideDiv()">History</button>
         </div>
     </section>
+
+
     <div id="result-modal" class="modal">
+
         <div class="modal-background"></div>
+
         <div class="modal-card">
             <header class="modal-card-head">
-                <p class="modal-card-title">Modal title</p>
-                <button id="btn" class="delete" aria-label="close">Where am i</button>
+                <p class="modal-card-title">Travel Info</p>
+                <button id="btn" class="delete" aria-label="close"></button>
             </header>
+
             <section class="modal-card-body">
                 <div id="res">
                     <div id="res-image">
@@ -79,19 +83,40 @@
                         Weather: Temperature:
                     </div>
                 </div>
-
-
-
-
             </section>
+
             <footer class="modal-card-foot">
-                <button class="button is-success is-large" onclick="document.getElementById('result-modal').classList.remove('is-active')">
-                Save changes</button>
-                <button class="button is-danger is-large">Cancel</button>
+                <button class="button is-success is-large" onclick="document.getElementById('result-modal').classList.remove('is-active'); onclick= Client.travelHistory(event)">
+                Save 
+                </button>
             </footer>
         </div>
     </div>
 
+    <footer id="footer">
+        <span> Copyright <i class="far fa-copyright fa-1x"></i> 2020 by Filipe Carolino | All rights reserved</span>
+        <div class="social-media">
+            </br>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com/login?lang=pt"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="http://www.github.com/"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
+    </footer>
+
+
+    <div id="cards-container">
+    </div>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js');
+            });
+        }
+    </script>
 
 
 
@@ -102,9 +127,12 @@
 
 
 
-    <script type="text/javascript" src="../js/validation.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+    <script src="../js/app.js "></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
 
 </body>
 

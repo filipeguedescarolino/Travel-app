@@ -31,3 +31,78 @@
  .field-area {
      display: none;
  }
+ 
+ #card-container {
+     display: flex;
+     margin-top: 100px;
+     background-color: lightblue;
+ }
+ 
+ #master-card {
+     display: flex;
+     margin-right: 20px;
+     margin-left: 20px;
+     justify-content: space-evenly;
+     flex-basis: 250%;
+ }
+ 
+ #get {
+     width: 45%;
+     margin-left: 10px;
+ }
+ 
+ #get-history {
+     width: 45%;
+ }
+ 
+ #master-card {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     background-color: lightgray;
+ }
+ 
+ #history-title {
+     width: 100%;
+     font-size: 20px;
+     font-weight: bold;
+     margin-top: 30px;
+     margin-left: 500px;
+ }
+ 
+ #error {
+     font-weight: bold;
+     text-transform: uppercase;
+     color: red;
+ }
+ 
+ #cards-container {
+     display: flex;
+     margin-top: 30px;
+     text-align: center;
+ }
+ 
+ .history-card {
+     padding: 15px;
+     background-color: #d8d9de;
+     margin-right: 15px;
+     width: 230px;
+     font-size: 19px;
+     font-weight: 600;
+     text-transform: capitalize;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: 0.3s;
+ }
+ 
+ #footer {
+     display: flex;
+     flex-direction: column;
+     padding: 40px;
+     line-height: 1;
+     align-items: center;
+     margin-left: 150px;
+ }
+ 
+ #footer a {
+     color: rebeccapurple;
+ }

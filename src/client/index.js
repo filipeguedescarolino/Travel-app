@@ -1,15 +1,16 @@
  import { getInfo } from './js/app.js'
+ import { travelHistory } from './js/travelHistory.js'
+ import { validation } from './js/validation.js'
+ import { hideDiv } from './js/hideHistory.js'
 
 
 
 
- import './styles/header.scss'
  import './styles/style.scss'
-
- alert("i am here!");
- console.log("a bola");
 
  export {
      getInfo,
-
+     travelHistory,
+     validation,
+     hideDiv
  }

@@ -7,6 +7,9 @@
  const { default: Axios } = require("axios");
 
 
+
+
+
  async function getInfo() {
 
      let city = document.getElementById('city').value;
@@ -24,7 +27,7 @@
 
      document.getElementById("result-modal").classList.add("is-active");
 
-     console.log(response)
+
 
 
      let today = new Date();
@@ -49,8 +52,8 @@
 
 
 
+     console.log(response)
 
-     console.log(DifferenceInDays)
 
      document.getElementById("res-img").src = response.data.images;
      document.getElementById("res-city").innerHTML = `You will go to: ${response.data.city}`;
