@@ -1,8 +1,10 @@
 const { default: Axios } = require("axios");
+require('dotenv').config()
+console.log(process.env.USER);
 const maxRows = 1
-const username = "filipeslb10"
-const weatherAPI = "9244a6d63e7f40d7b53c3565fbee3c1a"
-const pixabayAPI = "18799697-892d09d26cd311eb9d14aa8d9"
+const username = process.env.USER
+const weatherAPI = process.env.WEATHER_API
+const pixabayAPI = process.env.PIXABAY_API
 let latitude = ""
 let longitude = ""
 let weather = ""

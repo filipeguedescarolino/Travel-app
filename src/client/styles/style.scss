@@ -106,3 +106,13 @@
  #footer a {
      color: rebeccapurple;
  }
+ 
+ @media screen and (max-width: 800px) {
+     html {
+         display: flex;
+         width: 20%;
+         justify-content: center;
+         align-items: center;
+         margin-left: 250px;
+     }
+ }
