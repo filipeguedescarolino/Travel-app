@@ -1,6 +1,6 @@
 const { default: Axios } = require("axios");
 require('dotenv').config()
-console.log(process.env.USER);
+
 const maxRows = 1
 const username = process.env.USER
 const weatherAPI = process.env.WEATHER_API
