@@ -1,7 +1,8 @@
  import { getInfo } from './js/app.js'
+ import { removeModal } from './js/hideHistory.js'
  import { travelHistory } from './js/travelHistory.js'
- import { validation } from './js/validation.js'
- import { hideDiv } from './js/hideHistory.js'
+ //  import { validation } from './js/validation.js'
+ import { toggleHistory } from './js/hideHistory.js'
 
 
 
@@ -11,6 +12,6 @@
  export {
      getInfo,
      travelHistory,
-     validation,
-     hideDiv
+     removeModal,
+     toggleHistory
  }

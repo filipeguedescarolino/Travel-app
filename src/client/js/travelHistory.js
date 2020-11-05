@@ -2,6 +2,7 @@ export { travelHistory }
 const { default: Axios } = require("axios");
 
 async function travelHistory() {
+
     let response = await Axios({
         method: 'get',
         url: '/travel-history'

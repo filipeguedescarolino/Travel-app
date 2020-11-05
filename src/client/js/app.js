@@ -1,14 +1,10 @@
- export { getInfo }
-
-
-
+ export {
+     getInfo,
+     //  removeModal
+ }
 
 
  const { default: Axios } = require("axios");
-
-
-
-
 
  async function getInfo() {
 
@@ -64,3 +60,11 @@
 
 
  }
+
+ document.getElementById("get").addEventListener("click", getInfo)
+
+ //  function removeModal() {
+ //      document.getElementById('result-modal').classList.remove('is-active');
+ //  }
+
+ //  document.getElementById("hide-modal").addEventListener("click", removeModal)

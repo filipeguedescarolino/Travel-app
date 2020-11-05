@@ -16,9 +16,6 @@
 <body>
 
     <section class="container-1 ">
-        <div id="error">
-
-        </div>
 
         <div class="field-area">
             <div class="control">
@@ -40,7 +37,7 @@
 
         <div class="field">
             <p class="control has-icons-left">
-                <input class="input is-rounded" type="date" id="date" placeholder="date" required>
+                <input class="input is-rounded" type="date" id="date" placeholder="date">
                 <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
                  </span>
@@ -48,8 +45,8 @@
         </div>
 
         <div class="buttons" id="button-listening">
-            <button class="button is-primary is-light" id="get" onclick="return Client.validation(event) ">Search</button>
-            <button class="button is-success is-dark" id="get-history" onclick="return Client.hideDiv()">History</button>
+            <button class="button is-primary is-light" id="get">Search</button>
+            <button class="button is-success is-dark" id="get-history">History</button>
         </div>
     </section>
 
@@ -86,7 +83,7 @@
             </section>
 
             <footer class="modal-card-foot">
-                <button class="button is-success is-large" onclick="document.getElementById('result-modal').classList.remove('is-active'); onclick= Client.travelHistory(event)">
+                <button id="hide-modal" class="button is-success is-large">
                 Save 
                 </button>
             </footer>
@@ -104,10 +101,10 @@
         </div>
     </footer>
 
-    <div id="hide-div">
-        <div id="cards-container">
-        </div>
+
+    <div id="cards-container">
     </div>
+
     <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
