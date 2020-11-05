@@ -15,40 +15,37 @@
 
 <body>
 
-    <section class="container-1 ">
+    <form class="container-1" onsubmit="return false">
 
-        <div class="field-area">
-            <div class="control">
-                <textarea class="textarea is-warning is-small " placeholder="errors"></textarea>
-            </div>
-        </div>
 
         <div class="field">
             <p class="control has-icons-left ">
-                <input class="input is-rounded input is-medium is-centered" id="city" type="text" placeholder="Choose a destination">
+
+                <input class="input is-rounded input is-medium is-centered" id="city" type="text" placeholder="Choose a destination" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-plane-departure"></i>
-                </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
                 </span>
             </p>
         </div>
 
+
+
         <div class="field">
             <p class="control has-icons-left">
-                <input class="input is-rounded" type="date" id="date" placeholder="date">
+
+                <input class="input is-rounded" type="date" id="date" placeholder="date" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
                  </span>
             </p>
         </div>
 
+
         <div class="buttons" id="button-listening">
             <button class="button is-primary is-light" id="get">Search</button>
             <button class="button is-success is-dark" id="get-history">History</button>
         </div>
-    </section>
+    </form>
 
 
     <div id="result-modal" class="modal">

@@ -1,6 +1,6 @@
  export {
      getInfo,
-     //  removeModal
+
  }
 
 
@@ -10,6 +10,10 @@
 
      let city = document.getElementById('city').value;
      let date = document.getElementById('date').value;
+
+     if (city == "" || date == "") {
+         return
+     }
      let timeNow = new Date();
 
      let response = await Axios({
@@ -62,9 +66,3 @@
  }
 
  document.getElementById("get").addEventListener("click", getInfo)
-
- //  function removeModal() {
- //      document.getElementById('result-modal').classList.remove('is-active');
- //  }
-
- //  document.getElementById("hide-modal").addEventListener("click", removeModal)
