@@ -20,6 +20,7 @@ function toggleHistory() {
         divHistory.innerHTML = "";
         isVisible = false;
     }
+
 }
 
 document.getElementById("get-history").addEventListener("click", toggleHistory);
